@@ -57,7 +57,7 @@ button:focus {
     background-color: #f32672;
     color: white;
     padding: 0.8em;
-    width: 12%;
+    width: 200px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -158,7 +158,7 @@ select {
     margin-right: 5px;
     border-bottom: 1px solid #f32672;
     border-radius: 0;
-    padding: 1px;
+    padding: 10px;
     text-align-last:center;
 }
 
@@ -171,6 +171,7 @@ select:focus{
     border-radius: 0;
 }
 #foot{
+    font-size: 1em;
     position: fixed;
     bottom: 0;
      background: rgba(81, 51, 108, 0.5);
