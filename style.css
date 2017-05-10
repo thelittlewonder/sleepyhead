@@ -134,6 +134,9 @@ button:focus {
     border: 1px solid #f32672;
     font-family: 'Didact Gothic', sans-serif;
     padding: 10px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
 }
 
 .time:hover{
@@ -199,4 +202,8 @@ select:focus{
 }
 #foot>a:hover{
     color: #f32672;
+}
+
+.link{
+    cursor: pointer;
 }
