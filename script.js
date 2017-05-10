@@ -4,6 +4,10 @@ document.getElementById("sleeplater").addEventListener("click", function (event)
     let hour, min, timeset;
     hour = parseInt(document.formmain.formhrs.value);
     min = parseInt(document.formmain.formmins.value);
+    if (isNaN(hour) || isNaN(min)) {
+        alert("Choose A Valid Time,Please!");
+        return;
+    }
     timeset = document.formmain.formtime.value;
     var uphour = new Array(4);
     var upmin = new Array(4);
@@ -34,7 +38,7 @@ document.getElementById("sleeplater").addEventListener("click", function (event)
         }
         if (uphour[i] > 12) {
             uphour[i] = uphour[i] % 12;
-            upset[i] = (upset[i - 1] === "AM") ? "PM" : "AM";
+            //upset[i] = (upset[i - 1] === "AM" && upset[i-1] > 12) ? "PM" : "AM";
         }
         if (uphour[i] === 12) {
             upset[i] = (upset[i - 1] === "AM") ? "PM" : "AM";
@@ -49,8 +53,11 @@ document.getElementById("sleeplater").addEventListener("click", function (event)
         }
     }
     for (i = 0; i < uphour.length; i++) {
-        console.log(uphour[i] + " " + upmin[i] + " " + upset[i]);
+        var temp = "dive" + i;
+        document.getElementById(temp).innerHTML = uphour[i] + ":" + upmin[i] + " " + upset[i];
     }
+    document.getElementById('msg2').style.display = "block";
+    document.getElementById('times2').style.display ="flex";
 });
 
 document.getElementById("sleepnow").addEventListener("click", function (event) {
@@ -97,7 +104,7 @@ document.getElementById("sleepnow").addEventListener("click", function (event) {
             nextmin[i] = nextmin[i] % 60;
             nexthour[i] = nexthour[i] + 1;
         }
-        if (nexthour[i] > 12) {
+        if (nexthour[i] >= 12) {
             nexthour[i] = nexthour[i] % 12;
             nextset[i] = "AM";
         }
@@ -116,6 +123,9 @@ document.getElementById("sleepnow").addEventListener("click", function (event) {
         }
     }
     for (i = 1; i < nexthour.length; i++) {
-        console.log(nexthour[i] + " " + nextmin[i] + " " + nextset[i]);
+        var temp = "div" + i;
+        document.getElementById(temp).innerHTML = nexthour[i] + ":" + nextmin[i] + " " + nextset[i] + '<br>';
     }
+    document.getElementById('msg1').style.display = "block";
+    document.getElementById('times1').style.display ="flex";
 });

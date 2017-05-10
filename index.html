@@ -4,53 +4,90 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <title>Sleepy Head</title>
 </head>
 
 <body>
-    <form name="formmain" id="formmain">
-        <select name="formhrs">
-      <option>(Hours)</option>
-      <option value="01">01</option>
-      <option value="02">02</option>
-      <option value="03">03</option>
-      <option value="04">04</option>
-      <option value="05">05</option>
-      <option value="06">06</option>
-      <option value="07">07</option>
-      <option value="08">08</option>
-      <option value="09">09</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-    </select>
-        <select name="formmins">
-      <option>(Minutes)</option>
-      <option value="00">00</option>
-      <option value="05">05</option>
-      <option value="10">10</option>
-      <option value="15">15</option>
-      <option value="20">20</option>
-      <option value="25">25</option>
-      <option value="30">30</option>
-      <option value="35">35</option>
-      <option value="40">40</option>
-      <option value="45">45</option>
-      <option value="50">50</option>
-      <option value="55">55</option>
-    </select>
-        <select name="formtime">
-      <option value="AM">AM</option>
-      <option value="PM">PM</option>
-    </select>
-        <button type="submit" class="sleep-btn" id="sleeplater">Calculate</button>
-    </form>
-    <button type="submit" id="sleepnow" class="sleep-btn">SLEEP NOW
-  </button>
+    <div id="canvas">
+        <div id="heading">
+            <h1>SLEEPY HEAD</h1>
+            <h6>Optimal Wake Time Calculator for a Super Energised Sleep Session</h6>
+        </div>
+        <div id="lower">
+            <div id="now">
+                <h2>I want to sleep now. When should I wake up?</h2>
+                <button type="submit" id="sleepnow" class="sleep-btn">SLEEP NOW</button>
+                <h3 id="msg1">You can set alarm for any of the following times:</h3>
+                <div id="times1">
+                    <div id="div1" class="time"></div>
+                    <div id="div2" class="time"></div>
+                    <div id="div3" class="time"></div>
+                    <div id="div4" class="time"></div>
+                    <div id="div5" class="time"></div>
+                    <div id="div6" class="time"></div>
+                </div>
+            </div>
+            <div id="later">
+                <h2>I want to wake up at</h2>
+                <form name="formmain" id="formmain">
+                    <select name="formhrs">
+                      <option>(Hours)</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                    <select name="formmins">
+                      <option>(Minutes)</option>
+                      <option value="00">00</option>
+                      <option value="05">05</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50">50</option>
+                      <option value="55">55</option>
+                    </select>
+                    <select name="formtime">
+                      <option value="AM">AM</option>
+                      <option value="PM">PM</option>
+                    </select>
+                    <br>
+                    <h2>When Should I Sleep?</h2>
+                    <button type="submit" class="sleep-btn" id="sleeplater">CALCULATE</button>
+                    <h3 id="msg2">Try to go to bed at the following time:</h3>
+                    <div id="times2">
+                        <div id="dive0" class="time"></div>
+                        <div id="dive1" class="time"></div>
+                        <div id="dive2" class="time"></div>
+                        <div id="dive3" class="time"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="foot"><a href="">How it works?</a> <span>Made with <i class="fa fa-heart pulse bluecolor"></i>
+                        by the <a href="https://github.com/littlewonder" target="_blank">thelittlewonder</a></span></footer>
 </body>
 
 </html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="s">
+<link rel="stylesheet" href="style.css">
 <style></style>
 <script src="script.js"></script>

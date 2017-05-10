@@ -1,0 +1,201 @@
+
+body {
+    background-color: #2d1e3c;
+}
+
+h1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+    color: #f32672;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+    display: none;
+    margin-bottom: 15px;
+}
+
+h6 {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.sleep-btn {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #f32672;
+    color: white;
+    padding: 0.8em;
+    width: 12%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+}
+
+#lower {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#now {
+    text-align: center;
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    background: rgba(81, 51, 108, 0.5);
+    margin: 1%;
+    padding: 1%;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    height: 100%;
+}
+
+#later {
+    text-align: center;
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    background: rgba(81, 51, 108, 0.5);
+    margin: 1%;
+    padding: 1%;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    height: 100%;
+}
+
+#heading {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+#sleepnow,#sleeplater {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+
+#timewake{
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+}
+
+#times1,#times2{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.time{
+    margin: 5px;
+    color: white;
+    border: 1px solid #f32672;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 10px;
+}
+
+.time:hover{
+    color: #f32672;
+    border: 1px solid #f32672;
+    background-color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none; 
+    background: transparent;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Source Sans Pro';
+    text-align: center;
+    margin-right: 5px;
+    border-bottom: 1px solid #f32672;
+    border-radius: 0;
+    padding: 1px;
+    text-align-last:center;
+}
+
+select:hover{
+    cursor: pointer;
+}
+select:focus{
+    outline: none;
+    border-bottom: 1px solid #f32672;
+    border-radius: 0;
+}
+#foot{
+    position: fixed;
+    bottom: 0;
+     background: rgba(81, 51, 108, 0.5);
+    width: 100%;
+    padding: 10px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: white;
+}
+
+#foot>span{
+    float: right;
+    margin-right: 20px;
+}
+#foot>span>a{
+    text-decoration: none;
+    color: white;
+}
+#foot>span>a:hover{
+    color: #f32672;
+}
+
+#foot>a{
+    text-decoration: none;
+    color: white;
+}
+#foot>a:hover{
+    color: #f32672;
+}
