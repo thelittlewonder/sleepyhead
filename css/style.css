@@ -187,6 +187,7 @@ select:focus {
 }
 
 #foot {
+    margin-top: 20px;
     font-size: 1em;
     position: fixed;
     bottom: 0;
