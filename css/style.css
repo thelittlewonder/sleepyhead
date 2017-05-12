@@ -56,7 +56,6 @@ button:focus {
     background-color: #f32672;
     color: white;
     padding: 0.8em;
-    width: 200px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -64,18 +63,21 @@ button:focus {
 #canvas {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #lower {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #now {
     text-align: center;
     margin: 0;
-    width: 50%;
+    width: auto;
     padding: 0;
     background: rgba(81, 51, 108, 0.5);
     margin: 1%;
@@ -84,12 +86,17 @@ button:focus {
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
 
 #later {
     text-align: center;
     margin: 0;
-    width: 50%;
+    width: auto;
     padding: 0;
     background: rgba(81, 51, 108, 0.5);
     margin: 1%;
@@ -98,6 +105,10 @@ button:focus {
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 2%;
+    margin-right: 2%;
 }
 
 #heading {
@@ -111,7 +122,6 @@ button:focus {
 #sleeplater {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 20%;
 }
 
 #timewake {
@@ -126,6 +136,7 @@ button:focus {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .time {
@@ -213,9 +224,10 @@ select:focus {
     cursor: pointer;
 }
 
-#now:hover,#later:hover {
--webkit-box-shadow: -2px 11px 57px 4px rgba(36,36,36,1);
--moz-box-shadow: -2px 11px 57px 4px rgba(36,36,36,1);
-box-shadow: -2px 11px 57px 4px rgba(36,36,36,1);
+#now:hover,
+#later:hover {
+    -webkit-box-shadow: -2px 11px 57px 4px rgba(36, 36, 36, 1);
+    -moz-box-shadow: -2px 11px 57px 4px rgba(36, 36, 36, 1);
+    box-shadow: -2px 11px 57px 4px rgba(36, 36, 36, 1);
     transform: scale(1.01);
 }
